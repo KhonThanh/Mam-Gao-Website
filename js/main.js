@@ -7,6 +7,7 @@ $(document).ready(function () {
     arrows: true,
     prevArrow: $(".prev-btn"),
     nextArrow: $(".next-btn"),
+    touchMove: false,
   });
 });
 
@@ -18,6 +19,7 @@ $(document).ready(function () {
     dots: true,
     autoplay: true,
     arrows: true,
+    touchMove: false,
     responsive: [
       {
         breakpoint: 425,
@@ -42,6 +44,7 @@ $(document).ready(function () {
     autoplay: true,
     prevArrow: $(".prev-btn"),
     nextArrow: $(".next-btn"),
+    touchMove: false,
   });
 });
 
