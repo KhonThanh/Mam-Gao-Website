@@ -304,6 +304,7 @@ ul {
 }
 
 .container-tag__btn {
+    border : none;
     padding: 20px;
     border-radius: 10px;
     background-color: var(--color-white);
