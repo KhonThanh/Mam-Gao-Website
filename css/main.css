@@ -83,6 +83,7 @@ ul {
 .header {
     display: flex;
     justify-content: center;
+    position: sticky;
 }
 
 .header-menu {
