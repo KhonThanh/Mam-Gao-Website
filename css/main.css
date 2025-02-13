@@ -320,16 +320,13 @@ ul {
     width: 100%;
     padding: 0px 56px;
     align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .active {
     background-color: var(--secondary-color);
 }
 
-.active div {
-    border-bottom: 1px solid var(--color-white);
-}
 
 .active p {
     color: var(--color-white);
