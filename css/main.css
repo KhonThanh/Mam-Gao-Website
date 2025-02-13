@@ -306,7 +306,6 @@ ul {
 .container-tag__btn {
     padding: 20px;
     border-radius: 10px;
-    border: 2px solid var(--secondary-color);
     background-color: var(--color-white);
 }
 
@@ -320,7 +319,6 @@ ul {
     width: 100%;
     padding: 0px 56px;
     align-items: center;
-    padding-bottom: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
