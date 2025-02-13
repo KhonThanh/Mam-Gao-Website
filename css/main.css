@@ -309,6 +309,7 @@ ul {
     padding: 20px;
     border-radius: 10px;
     background-color: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .container-tag__btn p {
@@ -321,7 +322,6 @@ ul {
     width: 100%;
     padding: 0px 56px;
     align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .active {
