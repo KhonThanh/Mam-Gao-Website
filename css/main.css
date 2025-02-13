@@ -84,6 +84,10 @@ ul {
     display: flex;
     justify-content: center;
     position: sticky;
+    top: 0; 
+    background-color: white; 
+    z-index: 1000; 
+    width: 100%; 
 }
 
 .header-menu {
