@@ -248,6 +248,7 @@ ul {
 .container-intro__content div {
     width: 100%;
     display: flex;
+    padding-right: 20px;
     justify-content: right;
     gap: 10px;
     align-items: center;
@@ -313,7 +314,7 @@ ul {
 .container-tag__btn p {
     text-transform: uppercase;
     font-weight: bold;
-
+    font-size: 24px;
 }
 
 .container-tag__btn div {
