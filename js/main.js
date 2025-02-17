@@ -12,25 +12,22 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $('.certification').slick({
+  $('.custom-certification__img').slick({
     infinite: true,
     slidesToShow: 3,
     speed: 500,
     dots: true,
     autoplay: true,
     arrows: true,
-    touchMove: false,
     responsive: [
       {
-        breakpoint: 425,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
+      
     ]
   });
 });
@@ -42,9 +39,8 @@ $(document).ready(function () {
     speed: 500,
     dots: true,
     autoplay: true,
-    prevArrow: $(".prev-btn"),
-    nextArrow: $(".next-btn"),
-    touchMove: false,
+    // prevArrow: $(".prev-btn"),
+    // nextArrow: $(".next-btn"),
   });
 });
 
