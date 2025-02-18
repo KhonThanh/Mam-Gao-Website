@@ -88,7 +88,7 @@ ul {
     width: 100%;
     display: flex;
     justify-content: center;
-    position: sticky;;
+    position: sticky;
     top: 0;
     z-index: 10;
 }
@@ -199,7 +199,7 @@ ul {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
 .nar-content {
