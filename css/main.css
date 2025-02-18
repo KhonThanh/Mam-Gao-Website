@@ -348,10 +348,8 @@ ul {
 }
 
 .img-map{
-/*     height: 678px; */
+    height: 678px;
     position: relative;
-    overflow: hidden;
-    width: 1200px;
 }
 
 .img-map img{
