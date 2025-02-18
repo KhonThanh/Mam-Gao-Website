@@ -1,5 +1,46 @@
 /* css reponsive */
-@media screen and (max-width : 1024px) and (min-width : 769px) {
+
+@media screen and (max-width : 1200px) and (min-width: 1024px) {
+    .custom__menu {
+        padding: 10px 0px;
+    }
+
+    .slider {
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+    .btn-control {
+        width: 100%;
+    }
+
+    .custom-intro {
+        padding: 0px 10px;
+    }
+
+    .custom-product {
+        padding: 0px 10px;
+    }
+
+    .custom-news {
+        padding: 0px 10px;
+    }
+
+    .footer {
+        padding: 40px 0px;
+    }
+
+    .img-map{
+        padding: 0px 10px;
+    }
+
+    .img-map img {
+        width: calc(100% - 20px);
+        object-position: 20px;
+    }
+}
+
+@media screen and (max-width : 1024px) and (min-width : 945px) {
     .custom-menu__element {
         gap: 20px;
     }
@@ -9,15 +50,15 @@
     }
 
     .custom-menu {
-        gap: 20px;
+        gap: 10px;
+    }
+
+    .custom__menu {
+        gap: 30px;
     }
 
     .custom-switch__lang a {
         font-size: 14px;
-    }
-
-    .custom__menu{
-        gap: 20px;
     }
 
     /* css responsive banner */
@@ -85,23 +126,21 @@
     }
 
     /* css sản phẩm */
-    .filter-bar{
+    .filter-bar {
         padding: 0px 10px;
     }
-    
+
     .img-map{
-        height: 450px;
-        position: relative;
+        padding: 0px 10px;
     }
-    
-    .img-map img{
-        position: absolute;
-        top: -200px;
-        width: 1050px;
+
+    .img-map img {  
+        width: calc( 100% - 10px);
+        object-position: 20px;
     }
 }
 
-@media screen and (max-width : 768px) and (min-width : 426px) {
+@media screen and (max-width : 944px) and (min-width : 771px) {
     h2 {
         font-size: 24px;
     }
@@ -129,6 +168,10 @@
 
     .custom-menu__mobile {
         display: block;
+    }
+
+    .custom__menu {
+        padding: 10px 0px;
     }
 
     .custom-intro {
@@ -237,40 +280,238 @@
         flex-direction: column;
     }
 
-    .img-style-revese img{
+    .img-style-revese img {
         background-position: center;
         object-fit: cover;
         aspect-ratio: 16 / 9;
         border-radius: 10px;
     }
-    .reverse-item{
+
+    .reverse-item {
         flex-direction: column-reverse;
     }
-    .list-product__item {
-        width: calc(33.33% - 20px);
+
+    .list-product {
+        margin-left: 20px;
     }
 
-    .filter-bar{
+    .list-product__item {
+        width: calc(50% - 20px);
+    }
+
+    .filter-bar {
         flex-direction: column;
         justify-content: right;
         align-items: right;
-    } 
-    .filter-bar{
+    }
+
+    .filter-bar {
         padding: 0px 10px;
     }
 
     .img-map{
-        height: 350px;
+        padding: 0px 10px;
     }
-    
-    .img-map img{
-        top: -150px;
-        width: 780px;
+
+    .img-map img {
+        width: calc(100% - 10px);
+        object-position: 10px;
+    }
+
+    .footer {
+        padding: 20px 0px;
     }
 
 }
 
-@media screen and (max-width : 425px) {
+@media screen and (max-width : 770px) and (min-width : 571px){
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+    .logo{
+        width: 100px;
+    }
+
+    .custom-menu__element {
+        display: none;
+    }
+
+    .custom__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .custom-switch__lang {
+        display: none;
+    }
+
+    .custom-menu__btn {
+        display: none;
+    }
+
+    .custom-menu__mobile {
+        display: block;
+    }
+
+    .custom__menu {
+        padding: 10px 0px;
+    }
+
+    .custom-intro {
+        padding: 0px 10px;
+    }
+
+    .custom-intro p:first-child {
+        font-size: 24px;
+    }
+
+    .custom-intro h1 {
+        font-size: 64px;
+    }
+
+    /* css responsive banner */
+
+    .slider {
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+    .btn-control {
+        width: 100%;
+        top: 28%;
+    }
+
+    .container-tag__btn {
+        padding: 15px 48px;
+        font-size: 14px;
+    }
+
+    .custom-menu {
+        justify-content: space-between;
+    }
+
+    .custom-product {
+        gap: 10px;
+        padding: 0px 10px;
+    }
+
+    .custom-tag__btn {
+        font-size: 14px;
+    }
+
+    /* css new */
+    .custom-news {
+        padding: 0px 10px;
+        flex-direction: column;
+    }
+
+    .container-map img {
+        width: calc(100% - 20px);
+        padding: 0px 20px;
+    }
+
+    .container-certification img {
+        width: 100%
+    }
+
+    .partner {
+        padding: 10px;
+    }
+
+    .partner-info {
+        padding: 20px 0px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+
+    .nar-content a {
+        font-size: 12px;
+    }
+
+    .nar-content i {
+        font-size: 8px;
+    }
+
+    /* css trang liên hệ */
+    .contact-form {
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+
+    .contact-form img {
+        aspect-ratio: 16 / 9;
+    }
+
+    .contact-form__input h5 {
+        font-size: 18px;
+    }
+
+    .contact-form__item input {
+        padding: 15px 10px;
+    }
+
+    .custom-intro {
+        padding: 0px 10px;
+        flex-direction: column;
+    }
+
+    .img-style-revese img {
+        background-position: center;
+        object-fit: cover;
+        aspect-ratio: 16 / 9;
+        border-radius: 10px;
+    }
+
+    .reverse-item {
+        flex-direction: column-reverse;
+    }
+
+    .list-product {
+        margin-left: 20px;
+    }
+
+    .list-product__item {
+        width: calc(50% - 20px);
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        justify-content: right;
+        align-items: right;
+    }
+
+    .filter-bar {
+        padding: 0px 10px;
+    }
+
+    .img-map{
+        aspect-ratio: 16 / 7;
+        padding: 10px;
+    }
+
+    .img-map img {
+        width: calc(100% - 10px)
+        object-position: 10px;
+    }
+
+    .footer {
+        padding: 20px 0px;
+    }
+}
+
+@media screen and (max-width : 570px) {
     h2 {
         font-size: 18px;
     }
@@ -289,7 +530,7 @@
         font-size: 12px;
     }
 
-    li{
+    li {
         font-size: 12px;
     }
 
@@ -298,7 +539,7 @@
         justify-content: space-between;
     }
 
-    .logo{
+    .logo {
         width: 83px;
     }
 
@@ -325,6 +566,10 @@
 
     .custom-menu {
         justify-content: space-between;
+    }
+
+    .custom__menu {
+        padding: 10px 0px;
     }
 
     .custom-intro {
@@ -463,11 +708,11 @@
     }
 
     /* css phần giới thiệu */
-    .reverse-item{
+    .reverse-item {
         flex-direction: column-reverse;
     }
 
-    .custom-content h2{
+    .custom-content h2 {
         color: var(--primary-color);
         font-size: 54px;
     }
@@ -477,40 +722,48 @@
     }
 
 
-    .custom-content p:first-child{
+    .custom-content p:first-child {
         font-size: 20px;
     }
 
-    .custom-content h1{
+    .custom-content h1 {
         font-size: 60px;
     }
 
-    .list-product{
+    .list-product {
         margin: 0px;
     }
-    
-    .filter-bar{
+
+    .filter-bar {
         padding: 0px 10px;
     }
 
-    .filter-bar{
+    .filter-bar {
         flex-direction: column;
         justify-content: right;
         align-items: right;
-    } 
-    .filter-bar div:last-child{
+    }
+
+    .filter-bar div:last-child {
         display: flex;
         flex-wrap: wrap;
         justify-content: left;
     }
 
-    .img-map{
-        height: 180px;
+    .footer {
+        padding: 20px 0px;
     }
+
     
-    .img-map img{
-        top: -100px;
-        width: 450px;
+    .img-map{
+        aspect-ratio: 16 / 6;
+        padding: 10px;
+    }
+
+    .img-map img {
+        width: calc(100% - 10px);
+        top : -100px;
+        object-position:10px;
     }
 
 }

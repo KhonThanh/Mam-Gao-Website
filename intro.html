@@ -22,28 +22,44 @@
             <img class="logo" src="./img/image 3.png" alt="">
             <ul class="custom-menu__element">
                 <li><a  href="./index.html">trang chủ</a></li>
-                <li><a  class="element-active" href="./intro.html">giới thiệu</a></li>
+                <li><a class="element-active" href="./intro.html">giới thiệu</a></li>
                 <li><a href="./product.html">Sản phẩm</a></li>
-                <li><a href="#">tin tức</a></li>
+                <li><a href="./news.html">tin tức</a></li>
                 <li><a href="./partner.html">Đối tác</a></li>
                 <li><a href="./contact.html">Liên hệ</a></li>
             </ul>
             <button type="button" class="custom-menu__btn"><i class="fa fa-search"></i></button>
             <div class="custom-switch__lang">
-                <a href="#">Tiếng Việt</a> / <a href="#">English</a>
+                <a class="land__active" href="#">Tiếng Việt</a> / <a href="#">English</a>
             </div>
-            <button type="button" class="custom-menu__mobile"><i class="fa fa-bars"></i>
-                <!-- <div class="background-menu-mb" ></div>    
-            <div class="menu-mb">
+            <button type="button" onclick="popupmenu()" class="custom-menu__mobile"><i id="btn-menu__mb"
+                    class="fa fa-bars"></i>
+            </button>
+        </div>
+        <div id="background-menu-mb" class="background-menu-mb display " onclick="popupmenu()"></div>
+        <div id="menu-mb" class=" menu-mb display">
+            <div>
                 <ul class="menu-mb__element">
-                    <li><a class="element-active__mb" href="./index.html">trang chủ</a></li>
-                    <li><a href="#">giới thiệu</a></li>
-                    <li><a href="#">Sản phẩm</a></li>
-                    <li><a href="#">tin tức</a></li>
+                    <li><a  href="./index.html">trang chủ</a></li>
+                    <li><a  class="element-active" href="./intro.html">giới thiệu</a></li>
+                    <li><a href="./product.html">Sản phẩm</a></li>
+                    <li><a href="./news.html">tin tức</a></li>
                     <li><a href="./partner.html">Đối tác</a></li>
-                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="./contact.html">Liên hệ</a></li>
                 </ul>
-            </div> -->
+                <div class="menu-mb__search">
+                    <div class="search">
+                        <div class="search-field">
+                            <div class="search-icon"></div>
+                            <input type="text" class="search-input" placeholder="Search">
+                        </div>
+                        <button class="search-button"><i class="fa fa-search"></i></button>
+                    </div>
+                    <div class="custom-switch__lang-mb">
+                        <a class="land__active" href="#">Tiếng Việt</a> / <a href="#">English</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="nav-bar">
