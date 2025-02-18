@@ -1,7 +1,7 @@
 /* css reponsive */
 @media screen and (max-width : 1024px) and (min-width : 769px) {
     .custom-menu__element {
-        gap: 30px;
+        gap: 20px;
     }
 
     .custom-menu__element a {
@@ -14,6 +14,10 @@
 
     .custom-switch__lang a {
         font-size: 14px;
+    }
+
+    .custom__menu{
+        gap: 20px;
     }
 
     /* css responsive banner */
