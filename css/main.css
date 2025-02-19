@@ -442,7 +442,9 @@ ul {
 
 .img-map img{
     position: absolute;
-    top: -150px;
+    top: -300px;
+    right: -250px;
+    width: 120%;
 }
 
 .container-wrap {
