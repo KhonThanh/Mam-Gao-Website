@@ -1168,3 +1168,174 @@ header {
     flex-wrap: wrap;
 }
 
+.banner-news{
+    border-radius: 10px
+}
+
+/* css bài viết */
+
+.detail-news__content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 0px 120px;
+}
+.detail-news__content h1{
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+.detail-news__content p{
+    font-size: 14px;
+    line-height: 20px;
+}
+.detail-news__content h2{
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.detail-news__content h3{
+    font-size: 16px;
+}
+
+.detail-news__content img{
+    aspect-ratio: 4 / 3;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.detail-news__content p,
+.detail-news__content h1,
+.detail-news__content h2,
+.detail-news__content h3,
+.detail-news__content span{
+    width: 100%;
+}
+
+.news-tag{
+    width: 100%;
+}
+
+.style-tag{
+    display: flex;
+    gap:10px;
+}
+
+.f-left{
+    justify-content: right;
+}
+
+.style-tag span,
+.style-tag p{
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.style-tag span{
+    font-weight: bold;
+}
+
+.news-company_info{
+    width: 100%;
+}
+
+.news-company_info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* css detail product */
+
+.custom-detail-product{
+    display: flex;
+    gap: 20px;
+}
+
+.img-product__img{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.img-product__slide{
+    flex: 1 1 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.img-product__slide img{
+    width: calc(33.33% - 20px);
+}
+
+.detail-product__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.detail-product__info h1,
+.detail-product__info h3{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.detail-product__info h1{
+    font-size: 28px;
+    color: var(--secondary-color);
+}
+
+.detail-product__info div{
+    display: flex;
+    gap: 20px;
+}
+
+.detail-product__info>div>div>div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detail-product__info>div>div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.detail-product__info span{
+    color: var(--secondary-color);
+}
+
+.product-mas{
+    width: fit-content;
+    border-radius: 50px;
+    padding: 10px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.product-contact__btn{
+    width: fit-content;
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    border-radius: 100px;
+    border: none;
+    font-size: 18px;
+}
+#scrollTopBtn{
+    display: none;
+    position: fixed;
+    padding: 20px;
+    z-index: 100;
+    border-radius: 100px;
+    border: none;
+    bottom: 20px;
+    right: 20%;
+    background-color: var(--primary-color);
+}
+
+#scrollTopBtn i{
+    font-size: 24px;
+    color: var(--color-white);
+}

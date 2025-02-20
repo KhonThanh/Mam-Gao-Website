@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Mầm Gạo</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="background-color-W">
+            <div class="wrapper-position custom__menu">
+                <img class="logo" src="./img/image 3.png" alt="">
+                <ul class="custom-menu__element">
+                    <li><a href="./index.html">trang chủ</a></li>
+                    <li><a href="./intro.html">giới thiệu</a></li>
+                    <li><a class="element-active" href="./product.html">Sản phẩm</a></li>
+                    <li><a href="./news.html">tin tức</a></li>
+                    <li><a href="./partner.html">Đối tác</a></li>
+                    <li><a href="./contact.html">Liên hệ</a></li>
+                </ul>
+                <button type="button" class="custom-menu__btn"><i class="fa fa-search"></i></button>
+                <div class="custom-switch__lang">
+                    <a class="land__on" href="./detailnews.html">Tiếng Việt</a>
+                    <a class="land__off" href="./detailnews.html">English</a>
+                </div>
+                <button type="button" onclick="popupmenu()" class="custom-menu__mobile"><i id="btn-menu__mb"
+                        class="fa fa-bars"></i>
+                </button>
+
+            </div>
+            <button id="scrollTopBtn">
+                <i class="fab fa-arrow-up"></i>
+            </button>
+            <div id="background-menu-mb" class="background-menu-mb display " onclick="popupmenu()"></div>
+            <div id="menu-mb" class=" menu-mb display">
+                <div>
+                    <ul class="menu-mb__element">
+                        <li><a href="./index.html">trang chủ</a></li>
+                        <li><a href="./intro.html">giới thiệu</a></li>
+                        <li><a class="element-active" href="./product.html">Sản phẩm</a></li>
+                        <li><a href="./news.html">tin tức</a></li>
+                        <li><a href="./partner.html">Đối tác</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="menu-mb__search">
+                        <div class="search">
+                            <div class="search-field">
+                                <div class="search-icon"></div>
+                                <input type="text" class="search-input" placeholder="Search">
+                            </div>
+                            <button class="search-button"><i class="fa fa-search"></i></button>
+                        </div>
+                        <div class="custom-switch__lang-mb">
+                            <a class="land__active" href="./detailnews.html">Tiếng Việt</a> / <a
+                                href="./detailnews.html">English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="nav-bar">
+            <div class="nar-content">
+                <a href="./index.html">Trang chủ</a>
+                <i class="fa fa-chevron-right"></i>
+                <a href="./news.html">Sản phẩm</a>
+                <i class="fa fa-chevron-right"></i>
+                <a href="./news.html">Gạo bắc hương</a>
+            </div>
+        </section>
+        <section class="background-color-W">
+            <div class="wrapper-position custom-detail-product">
+                <div class="detail-product__img">
+                    <img src="./img/sp-1.png" alt="">
+                    <div class="img-product__slide">
+                        <img src="./img/sp-1.png" alt="">
+                        <img src="./img/sp-1.png" alt="">
+                        <img src="./img/sp-1.png" alt="">
+                    </div>
+                </div>
+                <div class="detail-product__info">
+                    <h1>
+                        gạo nở xốp
+                    </h1>
+                    <div>
+                        <p>Xuất xứ</p>
+                        <span>Việt nam</span>
+                    </div>
+                    <h3>Khối lượng</h3>
+                    <div class="product-mas">
+                        <p>10 KG</p>
+                    </div>
+                    <h3>Mô tả</h3>
+                    <ul>
+                        <li>Thành phần chính: 100% gạo lứt ST25 sinh thái Cà Mau Ông Cụ.</li>
+                        <li>Hương vị đặc trưng, hạt cơm mềm và bùi rất hấp dẫn.</li>
+                        <li>Sản xuất theo quy trình hiện đại, quá trình xay xát chỉ tách lớp vỏ trấu bên ngoài, lớp màng cám bên trong được giữ lại tối đa.</li>
+                        <li>Chứa nhiều khoáng chất và vitamin (đặc biệt là vitamin nhóm B) cần thiết cho cơ thể.</li>
+                        <li>Bảo quản: Để nơi khô ráo và thoáng mát, đậy kĩ nắp hộp sau khi sử dụng.</li>
+                        <li>HSD: 1 năm kể từ ngày sản xuất.</li>
+                    </ul>
+                    <div>
+                        <h3>tag</h3>
+                        <div>
+                            <a href="#">Gạo sinh thái</a>
+                            <a href="#">Gạo lứt ST25</a>
+                            <a href="#">Gạo lứt</a>
+                            <a href="#">Gạo lứt sinh thái</a>
+                            <a href="#">Gạo lứt st25 sinh thái cà mau</a>
+                        </div>
+                    </div>
+                    <button class="product-contact__btn">
+                        Liên hệ
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper-position custom-product">
+                <h2>Sản phẩm mới nhất</h2>
+                <div class="list-product">
+                    <a class="list-product__item" href="./detailproduct.html">
+                        <div>
+                            <img src="./img/sp-1.png" alt="">
+                            <div>
+                                <p>gạo thơm st21 5kg</p>
+                            </div>
+                            <button>
+                                Giới thiệu
+                            </button>
+                        </div>
+                    </a>
+                    <a class="list-product__item" href="./detailproduct.html">
+                        <div>
+                            <img src="./img/sp-2.png" alt="">
+                            <div>
+                                <p>gạo thơm st21 5kg</p>
+                            </div>
+                            <button>
+                                Giới thiệu
+                            </button>
+                        </div>
+                    </a>
+                    <a class="list-product__item" href="./detailproduct.html">
+                        <div>
+                            <img src="./img/sp-3.png" alt="">
+                            <div>
+                                <p>gạo thơm st21 5kg</p>
+                            </div>
+                            <button>
+                                Giới thiệu
+                            </button>
+                        </div>
+                    </a>
+                    <a class="list-product__item" href="./detailproduct.html">
+                        <div>
+                            <img src="./img/sp-4.png" alt="">
+                            <div>
+                                <p>gạo thơm st21 5kg</p>
+                            </div>
+                            <button>
+                                Giới thiệu
+                            </button>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-container__content">
+                    <div class="footer__title">
+                        <h2>Công Ty Cổ Phần Mầm Gạo</h2>
+                    </div>
+                    <p>Địa chỉ Trụ sở :</p>
+                    <div class="footer__content">
+                        <div>
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <p>283/12/10 đường Linh Đông, P Linh Đông, Tp Thủ Đức, Tp HCM, Việt Nam.</p>
+                    </div>
+                    <p>Địa chỉ Nhà máy :</p>
+                    <div class="footer__content">
+                        <div>
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <p>Ấp An Thạnh, Xã Hòa An,Huyện Chợ Mới, Tỉnh An Giang, Việt Nam</p>
+                    </div>
+                    <p>Email :</p>
+                    <div class="footer__content">
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <p>info@mamgao.com</p>
+                    </div>
+                    <p>Số điện thoại :</p>
+                    <div class="footer__content">
+                        <div>
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <p> 0939 316 039</p>
+                    </div>
+                </div>
+                <div class="footer-container__content">
+                    <div class="footer__title">
+                        <h2>Dịch vụ khách hàng</h2>
+                    </div>
+                    <a href="./detailnews.html">Giới thiệu</a>
+                    <a href="./detailnews.html">Sản phẩm</a>
+                    <a href="./detailnews.html">Tin tức</a>
+                    <a href="./detailnews.html">Đối tác</a>
+                    <a href="./detailnews.html">Giới thiệu</a>
+                </div>
+                <div class="footer-container__content">
+                    <div class="footer-logo">
+                        <img src="./img/image 3.png" alt="">
+                    </div>
+                    <div class="footer__title">
+                        <h2>Đăng ký nhận bản tin</h2>
+                    </div>
+                    <div class="footer-form_email">
+                        <input placeholder="Email" type="text">
+                        <button><i class="fa fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>

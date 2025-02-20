@@ -65,6 +65,15 @@ function popupmenu() {
   menu.style.display = (menu.style.display === "block") ? "none" : "block"
 };
 
+window.addEventListener("DOMContentLoaded", function(){
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+  scrollTopBtn.addEventListener("click", function(){
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    });
+  });
+});
 
 
 
