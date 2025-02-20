@@ -188,8 +188,8 @@ header {
 .land__on{
     color: var(--color-white);
     padding: 10px;
-    background-color: var(--secondary-color);
-    border-radius: 10px ;
+    background-color: var(--primary-color);
+    border-radius: 8px ;
 }
 
 .land__off{
@@ -205,7 +205,7 @@ header {
 .custom-switch__lang{
     padding: 10px 0px;
     border-radius: 10px;
-    border: 1px solid var(--secondary-color)
+    border: 1px solid var(--primary-color)
 }
 
 
@@ -559,7 +559,7 @@ header {
 
 .custom-tag__btn {
     border-radius: 10px;
-    border: 2px solid var(--secondary-color);
+    border: 2px solid var(--primary-color);
     background-color: var(--color-white);
     text-transform: uppercase;
     font-weight: bold;
@@ -570,7 +570,7 @@ header {
 }
 
 .active {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--color-white);
 }
 
