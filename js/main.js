@@ -22,13 +22,19 @@ $(document).ready(function () {
     touchMove: false,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 770,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 500,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
         }
       }
-
     ]
   });
 });

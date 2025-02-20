@@ -17,29 +17,11 @@
 </head>
 
 <body>
-    <div class="wrapper-menu background-color-W">
-        <div class="wrapper-position custom__menu">
-            <img class="logo" src="./img/image 3.png" alt="">
-            <ul class="custom-menu__element">
-                <li><a class="element-active" href="./index.html">trang chủ</a></li>
-                <li><a href="./intro.html">giới thiệu</a></li>
-                <li><a href="./product.html">Sản phẩm</a></li>
-                <li><a href="./news.html">tin tức</a></li>
-                <li><a href="./partner.html">Đối tác</a></li>
-                <li><a href="./contact.html">Liên hệ</a></li>
-            </ul>
-            <button type="button" class="custom-menu__btn"><i class="fa fa-search"></i></button>
-            <div class="custom-switch__lang">
-                <a class="land__active" href="#">Tiếng Việt</a> / <a href="#">English</a>
-            </div>
-            <button type="button" onclick="popupmenu()" class="custom-menu__mobile"><i id="btn-menu__mb"
-                    class="fa fa-bars"></i>
-            </button>
-        </div>
-        <div id="background-menu-mb" class="background-menu-mb display " onclick="popupmenu()"></div>
-        <div id="menu-mb" class=" menu-mb display">
-            <div>
-                <ul class="menu-mb__element">
+    <div class="container">
+        <header class="background-color-W">
+            <div class="wrapper-position custom__menu">
+                <img class="logo" src="./img/image 3.png" alt="">
+                <ul class="custom-menu__element">
                     <li><a class="element-active" href="./index.html">trang chủ</a></li>
                     <li><a href="./intro.html">giới thiệu</a></li>
                     <li><a href="./product.html">Sản phẩm</a></li>
@@ -47,41 +29,61 @@
                     <li><a href="./partner.html">Đối tác</a></li>
                     <li><a href="./contact.html">Liên hệ</a></li>
                 </ul>
-                <div class="menu-mb__search">
-                    <div class="search">
-                        <div class="search-field">
-                            <div class="search-icon"></div>
-                            <input type="text" class="search-input" placeholder="Search">
+                <button type="button" class="custom-menu__btn"><i class="fa fa-search"></i></button>
+                <div class="custom-switch__lang">
+                    <a class="land__on" href="#">Tiếng Việt</a> 
+                    <a class="land__off" href="#">English</a>
+                </div>
+                <button type="button" onclick="popupmenu()" class="custom-menu__mobile"><i id="btn-menu__mb"
+                        class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div id="background-menu-mb" class="background-menu-mb display " onclick="popupmenu()"></div>
+            <div id="menu-mb" class=" menu-mb display">
+                <div>
+                    <ul class="menu-mb__element">
+                        <li><a class="element-active" href="./index.html">trang chủ</a></li>
+                        <li><a href="./intro.html">giới thiệu</a></li>
+                        <li><a href="./product.html">Sản phẩm</a></li>
+                        <li><a href="./news.html">tin tức</a></li>
+                        <li><a href="./partner.html">Đối tác</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="menu-mb__search">
+                        <div class="search">
+                            <div class="search-field">
+                                <div class="search-icon"></div>
+                                <input type="text" class="search-input" placeholder="Search">
+                            </div>
+                            <button class="search-button"><i class="fa fa-search"></i></button>
                         </div>
-                        <button class="search-button"><i class="fa fa-search"></i></button>
+                        <div class="custom-switch__lang-mb">
+                            <a class="land__active" href="#">Tiếng Việt</a> / <a href="#">English</a>
+                        </div>
                     </div>
-                    <div class="custom-switch__lang-mb">
-                        <a class="land__active" href="#">Tiếng Việt</a> / <a href="#">English</a>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="wrapper-banner">
+                <div class="btn-control">
+                    <button class="prev-btn"><i class="fa fa-arrow-left"></i></button>
+                    <button class="next-btn"><i class="fa fa-arrow-right"></i></button>
+                </div>
+                <div class="slider">
+                    <div>
+                        <img src="./img/Frame 859.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./img/Frame 859.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./img/Frame 859.png" alt="">
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    </div>
-    <div class="container">
-        <div class="wrapper-banner">
-            <div class="btn-control">
-                <button class="prev-btn"><i class="fa fa-arrow-left"></i></button>
-                <button class="next-btn"><i class="fa fa-arrow-right"></i></button>
-            </div>
-            <div class="slider">
-                <div>
-                    <img src="./img/Frame 859.png" alt="">
-                </div>
-                <div>
-                    <img src="./img/Frame 859.png" alt="">
-                </div>
-                <div>
-                    <img src="./img/Frame 859.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="wrapper background-color-W">
+        </section>
+        <section class="background-color-W">
             <div class="wrapper-position custom-intro">
                 <div class="custom-intro__element">
                     <p>Giới thiệu nhanh về</p>
@@ -102,63 +104,73 @@
                     <img src="./img/intro-image.png" alt="">
                 </div>
             </div>
-        </div>
-        <div class="wrapper">
+        </section>
+        <section >
             <div class="wrapper-position img-map">
                 <img src="./img/new-map.png" alt="">
             </div>
-        </div>
-        <div class="wrapper background-color-W">
+        </section>
+        <section class="background-color-W">
             <div class="wrapper-position custom-product">
                 <h2>Sản phẩm cung ứng</h2>
                 <div class="custom-tag">
-                    <button class="custom-tag__btn active ">Gạo xá 25KG</button>
-                    <button class="custom-tag__btn  ">Gạo túi 25KG</button>
+                    <button class="custom-tag__btn active ">Gạo xá 50KG</button>
+                    <button class="custom-tag__btn  ">Gạo xá 25KG</button>
+                    <button class="custom-tag__btn  ">Gạo túi 10KG</button>
                 </div>
                 <div class="list-product">
-                    <div class="list-product__item">
-                        <img src="./img/sp-1.png" alt="">
+                    <a class="list-product__item" href="./detailproduct.html">
                         <div>
-                            <p>gạo thơm st21 5kg</p>
+                            <img src="./img/sp-1.png" alt="">
+                            <div>
+                                <p>gạo thơm st21 5kg</p>
+                            </div>
+                            <button>
+                                Giới thiệu
+                            </button>
                         </div>
-                        <button>
-                            Liên hệ
-                        </button>
-                    </div>
-                    <div class="list-product__item">
-                        <img src="./img/sp-1.png" alt="">
+                    </a>
+                    <a class="list-product__item" href="./detailproduct.html">
                         <div>
-                            <p>gạo thơm st21 5kg</p>
+                            <img src="./img/sp-2.png" alt="">
+                            <div>
+                                <p>gạo thơm st21 5kg</p>
+                            </div>
+                            <button>
+                                Giới thiệu
+                            </button>
                         </div>
-                        <button>
-                            Liên hệ
-                        </button>
-                    </div>
-                    <div class="list-product__item">
-                        <img src="./img/sp-1.png" alt="">
+                    </a>
+                    <a class="list-product__item" href="./detailproduct.html">
                         <div>
-                            <p>gạo thơm st21 5kg</p>
+                            <img src="./img/sp-3.png" alt="">
+                            <div>
+                                <p>gạo thơm st21 5kg</p>
+                            </div>
+                            <button>
+                                Giới thiệu
+                            </button>
                         </div>
-                        <button>
-                            Liên hệ
-                        </button>
-                    </div>
-                    <div class="list-product__item">
-                        <img src="./img/sp-1.png" alt="">
+                    </a>
+                    <a class="list-product__item" href="./detailproduct.html">
                         <div>
-                            <p>gạo thơm st21 5kg</p>
+                            <img src="./img/sp-4.png" alt="">
+                            <div>
+                                <p>gạo thơm st21 5kg</p>
+                            </div>
+                            <button>
+                                Giới thiệu
+                            </button>
                         </div>
-                        <button>
-                            Liên hệ
-                        </button>
-                    </div>
+                    </a>
+                    
                 </div>
                 <div class="custom-btn">
                     <button class="primary-btn">Xem thêm</button>
                 </div>
             </div>
-        </div>
-        <div class="wrapper">
+        </section>
+        <section>
             <div class="wrapper-position custom-certification">
                 <h2>Quản lý chất lượng sản phẩm </h2>
                 <p>Chúng tôi quản lý chất lượng theo tiêu chuẩn cao nhất và nghiêm ngặt từ các tổ chức uy tín trên thế
@@ -186,8 +198,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="wrapper background-color-W">
+        </section>
+        <section class="background-color-W">
             <div class="wrapper-position custom-news">
                 <div class="news-area ">
                     <div class="top-news">
@@ -294,10 +306,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="wrapper">
+        </section>
+        <section>
             <div class="wrapper-position custom-partner">
-                <h4>
+                <h2>
                     đối tác chiến lược
                 </h4>
                 <div class="partner-list">
@@ -357,76 +369,72 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    </div>
-
-    <div class="footer">
-        <div class="footer-container">
-            <div class="footer-container__content">
-                <div class="footer__title">
-                    <h2>Công Ty Cổ Phần Mầm Gạo</h2>
-                </div>
-                <p>Địa chỉ Trụ sở :</p>
-                <div class="footer__content">
-                    <div>
-                        <i class="fa fa-home"></i>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-container__content">
+                    <div class="footer__title">
+                        <h2>Công Ty Cổ Phần Mầm Gạo</h2>
                     </div>
-                    <p>283/12/10 đường Linh Đông, P Linh Đông, Tp Thủ Đức, Tp HCM, Việt Nam.</p>
-                </div>
-                <p>Địa chỉ Nhà máy :</p>
-                <div class="footer__content">
-                    <div>
-                        <i class="fa fa-home"></i>
+                    <p>Địa chỉ Trụ sở :</p>
+                    <div class="footer__content">
+                        <div>
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <p>283/12/10 đường Linh Đông, P Linh Đông, Tp Thủ Đức, Tp HCM, Việt Nam.</p>
                     </div>
-                    <p>Ấp An Thạnh, Xã Hòa An,Huyện Chợ Mới, Tỉnh An Giang, Việt Nam</p>
-                </div>
-                <p>Email :</p>
-                <div class="footer__content">
-                    <div>
-                        <i class="fa fa-envelope"></i>
+                    <p>Địa chỉ Nhà máy :</p>
+                    <div class="footer__content">
+                        <div>
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <p>Ấp An Thạnh, Xã Hòa An,Huyện Chợ Mới, Tỉnh An Giang, Việt Nam</p>
                     </div>
-                    <p>info@mamgao.com</p>
-                </div>
-                <p>Số điện thoại :</p>
-                <div class="footer__content">
-                    <div>
-                        <i class="fa fa-phone"></i>
+                    <p>Email :</p>
+                    <div class="footer__content">
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <p>info@mamgao.com</p>
                     </div>
-                    <p> 0939 316 039</p>
+                    <p>Số điện thoại :</p>
+                    <div class="footer__content">
+                        <div>
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <p> 0939 316 039</p>
+                    </div>
+                </div>
+                <div class="footer-container__content">
+                    <div class="footer__title">
+                        <h2>Dịch vụ khách hàng</h2>
+                    </div>
+                    <a href="#">Giới thiệu</a>
+                    <a href="#">Sản phẩm</a>
+                    <a href="#">Tin tức</a>
+                    <a href="#">Đối tác</a>
+                    <a href="#">Giới thiệu</a>
+                </div>
+                <div class="footer-container__content">
+                    <div class="footer-logo">
+                        <img src="./img/image 3.png" alt="">
+                    </div>
+                    <div class="footer__title">
+                        <h2>Đăng ký nhận bản tin</h2>
+                    </div>
+                    <div class="footer-form_email">
+                        <input placeholder="Email" type="text">
+                        <button><i class="fa fa-paper-plane"></i></button>
+                    </div>
                 </div>
             </div>
-            <div class="footer-container__content">
-                <div class="footer__title">
-                    <h2>Dịch vụ khách hàng</h2>
-                </div>
-                <a href="#">Giới thiệu</a>
-                <a href="#">Sản phẩm</a>
-                <a href="#">Tin tức</a>
-                <a href="#">Đối tác</a>
-                <a href="#">Liên hệ</a>
-            </div>
-            <div class="footer-container__content">
-                <div class="footer-logo">
-                    <img src="./img/image 3.png" alt="">
-                </div>
-                <div class="footer__title">
-                    <h2>Đăng ký nhận bản tin</h2>
-                </div>
-                <div class="footer-form_email">
-                    <input placeholder="Email" type="text">
-                    <button><i class="fa fa-paper-plane"></i></button>
-                </div>
-            </div>
-        </div>
+        </footer>   
     </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/main.js"></script>
-
 
 </body>
 

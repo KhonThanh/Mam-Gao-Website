@@ -52,8 +52,9 @@ img {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--color-black);
+    line-height: 20px;
 }
 
 a {
@@ -84,21 +85,30 @@ ul {
     list-style: none;
 }
 
-/* Base class  */
-.wrapper-menu {
+section{
+    padding: 40px 80px;
     width: 100%;
     display: flex;
     justify-content: center;
-    position: sticky;;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
     top: 0;
     z-index: 10;
 }
 
-.wrapper {
+/* Base class  */
+.container{
+    width: 100%;
     display: flex;
-    justify-content: center;
-    padding: 30px 0px;
+    flex-direction: column;
+    align-items: center;
 }
+
+
 
 .wrapper-position {
     max-width: 1200px;
@@ -106,9 +116,9 @@ ul {
 }
 
 .wrapper-banner {
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin: 20px 0px;
     position: relative;
 }
 
@@ -120,12 +130,12 @@ ul {
 
 
 .custom__menu {
+    width: 100%;
     position: relative;
-    max-width: 1200px;
     display: flex;
     align-items: center;
     padding: 10px 0px;
-    gap: 50px;
+    justify-content: space-between;
 }
 
 .logo {
@@ -134,21 +144,30 @@ ul {
 
 .custom-menu__element {
     display: flex;
-    flex-grow: 1;
-    justify-content: right;
+    justify-content: center;
     justify-content: space-between;
 }
+
 
 
 .element-active {
     color: var(--primary-color);
 }
 
+.custom__menu ul{
+    flex-grow: 1;
+}
 
 .custom-menu__element a {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 16px;
+}
+
+.custom-menu__element{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
 }
 
 .custom-menu__element a:hover {
@@ -158,6 +177,7 @@ ul {
 .custom-menu__btn {
     background-color: var(--color-white);
     border: none;
+    padding: 0px 20px;
 }
 
 .custom-menu__btn i {
@@ -165,12 +185,29 @@ ul {
     font-size: 16px;
 }
 
+.land__on{
+    color: var(--color-white);
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 10px ;
+}
 
-.custom-switch__lang a {
-    text-transform: uppercase;
+.land__off{
+    padding: 10px;
     color: var(--secondary-color);
+}
+
+.custom-switch__lang > a {
+    text-transform: uppercase;
     font-size: 16px;
 }
+
+.custom-switch__lang{
+    padding: 10px 0px;
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color)
+}
+
 
 
 
@@ -189,9 +226,7 @@ ul {
     color: var(--color-white);
 }
 
-.land__active{
-    text-decoration: underline;
-}
+
 
 /* css menu mobile */
 .display{
@@ -281,10 +316,7 @@ ul {
 
 /* css narbar */
 .nav-bar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0px 10px 0px;
+    padding: 20px 0px;
 }
 
 .nar-content {
@@ -307,22 +339,24 @@ ul {
 /* css banner btn slider */
 
 .slider {
-    width: 90%;
-    
+    position: relative;
+    width: inherit;
 }
 
 .slider img {
+    width: inherit;
     border-radius: 10px;
+    height: 100%;
 }
 
 .btn-control {
-    width: 90%;
+    width: 100%;
     padding: 0px 30px;
     display: flex;
     justify-content: space-between;
     position: absolute;
     z-index: 3;
-    top: 47%;
+    top: 45%;
 }
 
 .prev-btn,
@@ -345,7 +379,6 @@ ul {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 20px 0px;
     gap: 20px;
 }
 
@@ -358,10 +391,6 @@ ul {
     justify-content: center;
 }
 
-.custom-intro__element p {
-    font-size: 16px;
-    line-height: 20px;
-}
 
 .custom-intro__element h1,
 .custom-intro__element p:first-child {
@@ -402,6 +431,13 @@ ul {
     flex-direction: column;
     gap: 10px;
     justify-content: center;
+    width: calc(100% - 20px);
+}
+
+.custom-content>div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .custom-content h2,
@@ -454,7 +490,7 @@ ul {
 }
 
 .intro__bone {
-    flex: 1 0 40%;
+    width: calc( 50% - 20px);
 }
 
 .intro__bone div,
@@ -486,6 +522,10 @@ ul {
     width: 100%;
 }
 
+.reverse-item{
+    flex-direction: row-reverse;
+}
+
 /* css phần sơ đồ */
 
 
@@ -503,12 +543,10 @@ ul {
 
 /* css phần sản phẩm */
 .custom-product {
-    padding: 20px 0px 30px 0px;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: centers;
 }
 
 .custom-tag {
@@ -516,10 +554,10 @@ ul {
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 20px 0px;
 }
 
 .custom-tag__btn {
-    padding: 20px;
     border-radius: 10px;
     border: 2px solid var(--secondary-color);
     background-color: var(--color-white);
@@ -528,6 +566,7 @@ ul {
     font-size: 16px;
     color: var(--color-black);
     padding: 20px 56px;
+    font-family: var(--font-name);
 }
 
 .active {
@@ -556,13 +595,16 @@ ul {
 .list-product__item {
     width: calc(25% - 20px);
     background-color: var(--color-white);
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.list-product__item > div {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 15px;
-    padding: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
 }
 
 .list-product__item p {
@@ -573,7 +615,8 @@ ul {
     text-align: center;
 }
 
-.list-product__item div {
+.list-product__item>div>div {
+    
     padding-bottom: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -596,6 +639,7 @@ ul {
 }
 
 .news-area {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -604,6 +648,12 @@ ul {
 .old-news-area {
     display: flex;
     gap: 20px;
+}
+
+.top-news{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
 }
 
 .top-news>h2 {
@@ -615,6 +665,8 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .news h4 {
@@ -623,9 +675,14 @@ ul {
     text-transform: uppercase;
 }
 
+.news i{
+    font-size: 12px;
+}
+
 .news img {
     width: 100%;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     aspect-ratio: 16 / 9;
 }
 
@@ -638,22 +695,27 @@ ul {
 
 .news>div>div {
     color: var(--primary-color);
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    align-items: center;
 }
 
 .news:hover {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 2px rgba(66, 149, 60, 20);
     border-radius: 10px;
 }
 
 /* css partner */
 
-.custom-partner h4 {
-    text-transform: uppercase;
-    font-size: 24px;
-    margin-bottom: 20px;
+.custom-partner {
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
 }
 
-.partner-list {}
+
+
 
 .list-items {
     display: flex;
@@ -780,17 +842,19 @@ ul {
 
 /* css slick */
 .slick-dots li button:before {
-    color: var(--primary-color);
-    font-size: 12px;
+    color: var(--color-white);
+    font-size: 16px;
+    opacity: 100%;
 }
 
-.slick-dots .slick-active button:before {
-    color: var(--secondary-color);
-    font-size: 16px;
+.slick-dots li.slick-active button:before{
+    color: var(--primary-color);
+    font-size: 24px;
+    opacity: 100%;
 }
 
 .slick-dots {
-    bottom: -30px;
+    bottom: 20px;
 }
 
 .slick-dots li {
@@ -801,15 +865,11 @@ ul {
     content: "◉";
 }
 
-/* css trang liên hệ */
-.contact-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 20px 0px;
-    margin: 20px 0px;
-    background-color: var(--color-white);
+.slick-dotted.slick-slider{
+    margin: 0px;
 }
+
+/* css trang liên hệ */
 
 .contact-info {
     max-width: 1200px;
@@ -822,7 +882,7 @@ ul {
 .contact__position {
     display: flex;
     justify-content: space-between;
-
+    gap: 20px;
 }
 
 .contact-item {
@@ -845,12 +905,13 @@ ul {
 }
 
 .contact-item__info div {
-    border: 1px solid var(--secondary-color);
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex: 0 0 20px;
+    height: 20px;
+    border-radius: 30px;
+    border: 1px solid var(--secondary-color);
 }
 
 .contact-item__info span {
@@ -869,15 +930,14 @@ ul {
 /* css phần contact form */
 .contact-form {
     max-width: 1200px;
-    width: 100%;
+    width: calc(100% - 20px);
     display: flex;
     gap: 20px;
-    max-width: 1200px;
     align-items: center;
 }
 
 .contact-form>img {
-    width: 100%;
+    flex: 1 1 100%;
 }
 
 .contact-form__input {
@@ -885,7 +945,6 @@ ul {
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    flex: 1 1 calc(100% / 2 - 20px);
 }
 
 .contact-form__input div {
@@ -931,7 +990,6 @@ ul {
 .contact-form__input textarea::placeholder,
 .contact-form__input input::placeholder {
     font-family: var(--font-name);
-
 }
 
 
