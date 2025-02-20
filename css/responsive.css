@@ -119,9 +119,15 @@
 
     .img-map img {
         position: absolute;
-        top: -30%;
+        top: -50%;
         right: 0px;
         width: 100%;
+    }
+    .img-map{
+        aspect-ratio: 16 / 7;
+        width: 100%;
+        height: 100%;
+        position: relative;
     }
 
     header {
@@ -297,9 +303,16 @@
 
     .img-map img {
         position: absolute;
-        top: -30%;
+        top: -50%;
         right: 0px;
         width: 100%;
+    }
+
+    .img-map{
+        aspect-ratio: 16 / 7;
+        width: 100%;
+        height: 100%;
+        position: relative;
     }
 
     .btn-control {
