@@ -296,7 +296,6 @@ header {
     width: 100%;
     display: flex;
     justify-content: right;
-    padding-right: 200px;
 }
 
 .search {
