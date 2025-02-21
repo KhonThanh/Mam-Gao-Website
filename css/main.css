@@ -4,6 +4,7 @@
     --color-yellow-light: #FCE969;
     --color-light-green: #94C83E;
     --secondary-color: #42953C;
+    --color-yellow : #CAD090;
     --color-white: #ffffff;
     --color-black: #252525;
     --color-gray: #F5F5F3;
@@ -734,6 +735,27 @@ header {
     justify-content: center;
 }
 
+.partner-info>div>div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.partner-info>div>div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 3 / 3;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--primary-color);
+    border-radius: 100px;
+}
+
+.partner-info>div>div>div>i{
+    color: var(--primary-color);
+}
+
 .partner-info img {
     aspect-ratio: 16 / 9;
     width: 50%;
@@ -744,6 +766,10 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.custom-partner ul{
+    bottom: 5px;
 }
 
 /* css phần footer */
@@ -947,8 +973,13 @@ header {
     align-items: center;
 }
 
-.contact-form>img {
-    flex: 1 1 100%;
+
+.contact-form>div>img{
+    aspect-ratio: 9 / 16;
+}
+
+.contact-form>div:first-child{
+    width: 30%;
 }
 
 .contact-form__input {
@@ -965,9 +996,17 @@ header {
     justify-content: space-between;
 }
 
-.contact-form__input h5 {
+.contact-form__input>div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.contact-form__input>div>span,
+.contact-form__input>div>h5 {
     color: var(--secondary-color);
     font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
 .contact-form__input textarea {
@@ -1266,7 +1305,7 @@ header {
 }
 
 .detail-product__img{
-    width: 40%;
+    width: 50%;
     display: flex;
     height: 100%;
     flex-direction: row-reverse;
@@ -1283,28 +1322,32 @@ header {
 }
 
 .img-product__slide{
-    width: 20%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10%;
+}
+
+.img-product__slide img{
+    border: 1px solid var(--color-black);
 }
 
 .detail-product__element{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
 }
 
 .detail-product__element h1{
-    font-size: 42px;
+    font-size: 32px;
     color: var(--secondary-color);
 }
 
 .detail-product__element h1,
 .detail-product__element p{
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .tab-product{
@@ -1314,12 +1357,12 @@ header {
 
 .tab-product__info{
     width: fit-content;
-    padding: 10px 20px;
+    padding: 5px 6px;
 }
 
 .dashed-line{
     height: inherit;
-    background-color: var(--secondary-color);
+    background-color: var(--color-yellow);
     width: 1px;
 }
 
@@ -1329,43 +1372,56 @@ header {
 }
 
 hr{
-    color: var(--secondary-color);
+    color: rgba(202, 208, 144, 2);
+    background-color: rgba(202, 208, 144, 2);
+    height: 1px;
+    border: none;
 }
 
-.element-col ul{
-    list-style: circle;
+.detail-product__element ul{
     padding-left: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
-.element-col li::marker{
-    color: var(--primary-color);
+.detail-product__element li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    line-height: 26px;
 }
+
+.detail-product__element li>img{
+    width: 8px;
+    height: 8px;
+}
+
 
 .var-product{
     width: fit-content;
     border-radius: 100px;
-    padding: 10px 20px ;
+    padding: 5px 11px ;
+    margin-left: 12px;
     border: 1px solid var(--primary-color);
 }
 
 .var-product p{
+    font-size: 18px;
     color: var(--primary-color);
 }
 
 .product-contact__btn{
-    padding: 10px 40px;
+    padding: 6px 49px;
     border-radius: 100px;
     background-color: var(--primary-color);
     border: none;
     width: fit-content;
     color: var(--color-white);
-    font-size: 24px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
-
+    margin-left: 12px;
 }
 
 .tab-active p{

@@ -8,6 +8,8 @@
         width: 100%;
     }
 
+    
+
 }
 
 @media screen and (max-width: 1349px) and (min-width: 1024px) {
@@ -33,22 +35,32 @@
         padding: 40px 20px;
     }
 
-    .footer-container{
+    .footer-container {
         flex-wrap: wrap;
         gap: 30px;
     }
 
 
     .detail-product__element {
-        gap:10px
+        gap: 10px
     }
 
-    .detail-product__element h1{
+    .detail-product__element h1 {
         font-size: 36px;
     }
 
     .product-contact__btn {
         font-size: 18px;
+    }
+
+    .contact-form>div>img{
+        aspect-ratio: 9 / 18;
+    }
+
+    .contact-form__input>div{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
 }
 
@@ -112,23 +124,45 @@
         padding: 40px 20px;
     }
 
-    .footer-container{
+    .footer-container {
         gap: 30px;
     }
 
     .detail-news__content {
         padding: 0px;
     }
+
     .detail-product__element {
-        gap:10px
+        gap: 10px
     }
 
-    .detail-product__element h1{
+    .detail-product__element h1 {
         font-size: 32px;
     }
 
     .product-contact__btn {
         font-size: 18px;
+    }
+    .contact-form__input{
+        gap: 10px;
+    }
+
+    .contact-form>div>img{
+        aspect-ratio: 9 / 20;
+    }
+
+    .contact-form__input>div{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .contact-form__input>div> span,
+    .contact-form__input>div> h5 {
+        color: var(--secondary-color);
+        font-size: 18px;
+        font-weight: bold;
+        white-space: nowrap;
     }
 }
 
@@ -312,23 +346,57 @@
     .style-tag p {
         white-space: wrap;
     }
-    .detail-news__content p{
+
+    .detail-news__content p {
         font-size: 12px;
     }
-    .custom-detail-product{
+
+    .custom-detail-product {
         flex-direction: column;
     }
-    #scrollTopBtn{
+
+    #scrollTopBtn {
         display: block;
         right: 20px;
     }
 
-    .detail-product__img{
+    .detail-product__img {
         width: 100%;
     }
 
-    .footer__title > h2 > span{
+    .footer__title>h2>span {
         font-size: 16px;
+    }
+
+    .contact-form__input>div{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .contact-form>div>img{
+        aspect-ratio: 16 / 9;
+    }
+    
+
+    .contact-form__input{
+        gap: 10px;
+        width: 100%;
+    }
+
+    .contact-form__input>div>span,
+    .contact-form__input>div>h5 {
+        color: var(--secondary-color);
+        font-size: 12px; 
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    .img-product__slide{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
 }
@@ -544,7 +612,7 @@
         flex-grow: 1;
     }
 
-    .footer-container p{
+    .footer-container p {
         white-space: wrap;
         font-size: 10;
     }
@@ -579,40 +647,75 @@
     .detail-news__content {
         padding: 0px;
     }
+
     .style-tag p {
         white-space: wrap;
     }
-    .detail-product__info p{
+
+    .detail-product__info p {
         font-size: 12px;
         line-height: 18px;
     }
-    .detail-product__info h1{
-        font-size: 24px; 
+
+    .detail-product__info h1 {
+        font-size: 24px;
     }
-    .detail-product__info h3{
-        font-size: 16px; 
+
+    .detail-product__info h3 {
+        font-size: 16px;
     }
-    .custom-detail-product{
+
+    .custom-detail-product {
         flex-direction: column;
     }
-    .detail-product__info>ul>li{
+
+    .detail-product__info>ul>li {
         font-size: 12px;
         line-height: 18px;
     }
-    #scrollTopBtn{
+
+    #scrollTopBtn {
         display: block;
         right: 20px;
     }
 
-    .detail-product__img{
+    .detail-product__img {
         width: 100%;
     }
 
-    .product-contact__btn{
+    .product-contact__btn {
         font-size: 18px;
     }
 
-    .footer__title > h2 > span{
+    .footer__title>h2>span {
         font-size: 16px;
+    }
+    .contact-form>div>img{
+        aspect-ratio: 16 / 9;
+    }
+
+    .contact-form__input{
+        gap: 10px;
+        width: 100%;
+    }
+
+    .contact-form__input>div{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .contact-form__input>div>span,
+    .contact-form__input>div>h5 {
+        color: var(--secondary-color);
+        font-size: 9px; 
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    .img-product__slide{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
