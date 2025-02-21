@@ -53,7 +53,7 @@ $(document).ready(function () {
 });
 
 function popupmenu() {
-  let bg = document.getElementById("background-menu-mb")
+  let bg = document.getElementById("background-menu-mb");
   let btn = document.getElementById("btn-menu__mb");
   let menu = document.getElementById("menu-mb");
 
@@ -74,6 +74,12 @@ window.addEventListener("DOMContentLoaded", function(){
     });
   });
 });
+
+function popupsearch(){
+  let sb = document.getElementById('search-bar');
+
+  sb.style.display = (sb.style.display === "block") ? "none" : "block";
+};
 
 
 

@@ -157,6 +157,10 @@
         gap: 5px;
     }
 
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
     .contact-form__input>div> span,
     .contact-form__input>div> h5 {
         color: var(--secondary-color);
@@ -305,6 +309,10 @@
         gap: 30px;
     }
 
+    .footer-container p{
+        white-space: nowrap;
+    }
+
     .footer-container__content {
         flex: 1 1 calc(33.33% - 20px);
     }
@@ -315,7 +323,7 @@
 
     .footer-container__content:nth-child(3) {
         flex-grow: 1;
-        padding: 0px 30%;
+        padding: 0px 30px;
     }
 
     /* css news */
@@ -367,6 +375,8 @@
     .footer__title>h2>span {
         font-size: 16px;
     }
+
+    
 
     .contact-form__input>div{
         display: flex;
