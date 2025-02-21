@@ -1176,6 +1176,7 @@ header {
 
 .news_item img{
     aspect-ratio: 4 / 3 ;
+    border-radius: 5px;
 }
 
 
@@ -1212,6 +1213,8 @@ header {
 
 .wrapper-news__items img{
     aspect-ratio: 16 / 9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .item-wrap{
