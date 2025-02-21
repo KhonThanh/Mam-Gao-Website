@@ -921,9 +921,6 @@ header {
     gap: 20px;
 }
 
-.contact-info h1{
-    text-transform: uppercase;
-}
 
 .contact__position {
     display: flex;
@@ -971,6 +968,7 @@ header {
 
 .contact-info h1 {
     font-size: 24px;
+    text-transform: uppercase;
 }
 
 /* css phần contact form */
