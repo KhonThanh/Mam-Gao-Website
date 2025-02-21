@@ -921,6 +921,10 @@ header {
     gap: 20px;
 }
 
+.contact-info h1{
+    text-transform: uppercase;
+}
+
 .contact__position {
     display: flex;
     justify-content: space-between;
