@@ -75,11 +75,35 @@ window.addEventListener("DOMContentLoaded", function(){
   });
 });
 
-function popupsearch(){
-  let sb = document.getElementById('search-bar');
+// function popupsearch(){
+//   let searchBar = document.getElementById('search-bar');
 
-  sb.style.display = (sb.style.display === "block") ? "none" : "block";
-};
+//   searchBar.style.display = (searchBar.style.display === "block") ? "none" : "block";
+// };
 
+function popupsearch() {
+  let searchBar = document.getElementById("search-bar");
 
+  // Toggle hiển thị thanh tìm kiếm
+  if (searchBar.style.display === "block") {
+      searchBar.style.display = "none";
+      document.removeEventListener("click", handleCloseSearchBar);
+  } else {
+      searchBar.style.display = "block";
+      // Thêm event listener để ẩn khi bấm ra ngoài
+      setTimeout(() => {
+          document.addEventListener("click", handleCloseSearchBar);
+      }, 0);
+  }
+}
 
+function handleCloseSearchBar(event) {
+  let searchBar = document.getElementById("search-bar");
+  let icon = document.querySelector(".search-icon");
+
+  // Kiểm tra nếu click không nằm trong search-bar hoặc search-icon
+  if (!searchBar.contains(event.target) && !icon.contains(event.target)) {
+      searchBar.style.display = "none";
+      document.removeEventListener("click", handleCloseSearchBar);
+  }
+}

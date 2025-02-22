@@ -100,6 +100,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Base class  */
@@ -275,16 +276,33 @@ header {
     align-items: center;
     gap: 20px;
 }
-.bg-searchbar{
+/* css thanh search ẩn */
+
+
+#search-bar {
+    position: absolute;
+    max-width: 1200px;
+    width: 100%;
+    top: 65px;
+    display: none;
+}
+
+.search-bar__position{
+    width: inherit;
+    display: flex;
+    justify-content: right;
+}
+
+.search-icon{
+    display: flex;
     background-color: var(--color-white);
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 15px 20px;
-    width: fit-content;
-    box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    border: 1px solid rgba(148, 201, 60, 0.3);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .section__search {
+    background-color: var(--color-white);
     border-top: 2px solid var(--secondary-color);
     width: 100%;
     display: flex;
@@ -296,25 +314,50 @@ header {
     width: 100%;
     display: flex;
     justify-content: right;
-    padding-right: 200px;
 }
-
-.search {
-    width: calc(100% - 20px);
+.search-field,
+.search-field-mobile{
+    margin: 10px 0px;
     display: flex;
-    gap: 10px;
-    justify-content: center;
+    padding: 3px 3px 3px 10px;
+    border-radius: 100px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    border: 1px solid rgba(148, 201, 60, 0.3);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
-.search-field {
-    width: 300px ;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+.search-field-mobile {
+    width: 80%;
+}
+
+.search-field{
+    width: 30%;
+}
+
+
+.searchbar__button{
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 100%;
+    aspect-ratio: 2 / 2;
+    width: 30px;
+}
+
+.searchbar__button i{
+    color: var(--color-white);
 }
 
 .search-input {
     border: none;
+    flex-grow: 1;
+}
+
+
+.search-input:focus{
+    outline: none;
+    box-shadow: none;
 }
 
 .search-button {
@@ -1497,11 +1540,5 @@ hr {
     color: var(--color-white);
 }
 
-#search-bar {
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    display: none;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s;
-}
+
 

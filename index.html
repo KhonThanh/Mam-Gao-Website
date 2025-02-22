@@ -29,16 +29,17 @@
                     <li><a href="./partner.html">Đối tác</a></li>
                     <li><a href="./contact.html">Liên hệ</a></li>
                 </ul>
-                <button type="button" onclick="popupsearch()" class="custom-menu__btn"><i class="fa fa-search"></i></button>
+                <button id="search-btn" title="popup search" type="button" onclick="popupsearch()"
+                    class="custom-menu__btn"><i class="fa fa-search"></i></button>
                 <div class="custom-switch__lang">
-                    <a class="land__on" href="#">Tiếng Việt</a> 
+                    <a class="land__on" href="#">Tiếng Việt</a>
                     <a class="land__off" href="#">English</a>
                 </div>
-                <button type="button" onclick="popupmenu()" class="custom-menu__mobile"><i id="btn-menu__mb"
-                        class="fa fa-bars"></i>
+                <button title="popup menu" type="button" onclick="popupmenu()" class="custom-menu__mobile"><i
+                        id="btn-menu__mb" class="fa fa-bars"></i>
                 </button>
             </div>
-            <button id="scrollTopBtn">
+            <button title="scroll to the top" id="scrollTopBtn">
                 <i class="fa fa-arrow-up"></i>
             </button>
             <div id="background-menu-mb" class="background-menu-mb display " onclick="popupmenu()"></div>
@@ -53,12 +54,12 @@
                         <li><a href="./contact.html">Liên hệ</a></li>
                     </ul>
                     <div class="menu-mb__search">
-                        <div class="search">
-                            <div class="search-field">
-                                <div class="search-icon"></div>
-                                <input type="text" class="search-input" placeholder="Search">
+                        <div class="search-field-mobile">
+                            <div class="search-icon">
+                                <button class="searchbar__button" title="search-button"><i
+                                        class="fa fa-search"></i></button>
                             </div>
-                            <button class="search-button"><i class="fa fa-search"></i></button>
+                            <input type="text" class="search-input" placeholder="Thông tin bạn muốn tìm">
                         </div>
                         <div class="custom-switch__lang-mb">
                             <a class="land__active" href="#">Tiếng Việt</a> / <a href="#">English</a>
@@ -67,14 +68,13 @@
                 </div>
             </div>
             <div id="search-bar">
-                <div class="section__search">
-                    <div class="popup__searchbar">
-                        <div class="bg-searchbar">
-                            <div class="search-field">
-                                <div class="search-icon"></div>
-                                <input type="text" class="search-input" placeholder="Search">
-                            </div>
+                <div class="search-bar__position">
+                    <div class="search-field">
+                        <div class="search-icon">
+                            <button class="searchbar__button" title="search-button"><i
+                                    class="fa fa-search"></i></button>
                         </div>
+                        <input type="text" class="search-input" placeholder="Thông tin bạn muốn tìm">
                     </div>
                 </div>
             </div>
@@ -82,8 +82,8 @@
         <section>
             <div class="wrapper-banner">
                 <div class="btn-control">
-                    <button class="prev-btn"><i class="fa fa-arrow-left"></i></button>
-                    <button class="next-btn"><i class="fa fa-arrow-right"></i></button>
+                    <button title="prev button" class="prev-btn"><i class="fa fa-arrow-left"></i></button>
+                    <button title="next button" class="next-btn"><i class="fa fa-arrow-right"></i></button>
                 </div>
                 <div class="slider">
                     <div>
@@ -120,7 +120,7 @@
                 </div>
             </div>
         </section>
-        <section >
+        <section>
             <div class="wrapper-position img-map">
                 <img src="./img/new-map.png" alt="">
             </div>
@@ -178,7 +178,7 @@
                             </button>
                         </div>
                     </a>
-                    
+
                 </div>
                 <div class="custom-btn">
                     <button class="primary-btn">Xem thêm</button>
@@ -326,7 +326,7 @@
             <div class="wrapper-position custom-partner">
                 <h2>
                     đối tác chiến lược
-                </h4>
+                </h2>
                 <div class="partner-list">
                     <div>
                         <div class="list-items background-color-W">
@@ -454,7 +454,7 @@
                     <div class="footer__title">
                         <h2>danh mục thông tin</h2>
                     </div>
-                    <a href="#">giới thiệu</a>
+                    <a href="#">Giới thiệu</a>
                     <a href="#">Sản phẩm</a>
                     <a href="#">Tin tức</a>
                     <a href="#">Đối tác</a>
@@ -469,18 +469,17 @@
                     </div>
                     <div class="footer-form_email">
                         <input placeholder="Email" type="text">
-                        <button><i class="fa fa-paper-plane"></i></button>
+                        <button title="button share"><i class="fa fa-paper-plane"></i></button>
                     </div>
                 </div>
             </div>
-        </footer>   
+        </footer>
     </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/main.js"></script>
-
 </body>
 
 </html>
